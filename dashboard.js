@@ -1,12 +1,12 @@
 let a,b,c;
-a= prompt("Enter your Name");
-b= prompt("Enter your Age");
-c= prompt("Enter your City");
+a= String(prompt("Enter your Name"));
+b= Number(prompt("Enter your Age"));
+c= String(prompt("Enter your City"));
 if(b<18){
     alert("You are not eligible");
 }else{
     alert("You are eligible");}
-const d= new Date();
+const d= new Date();  
 let e=d.getHours();
 if(e<12){
     alert("Good Morning ");
@@ -34,7 +34,8 @@ alert("The result is "+result);
 const quotes ="Think big dream big";
 alert (quotes); 
 let info = {
-    'Name': f
-    , 'Age': g
+    'Name': a
+    , 'Age': b
     , 'City': c
 };
+console.log(JSON.stringify(info));
